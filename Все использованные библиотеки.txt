@@ -1,0 +1,21 @@
+#include <stdio.h> - это БАЗА(Для ввода, вывода и множества других плюшек)
+#include <malloc.h> - Для работы calloc, realloc и т.д
+#include <stdlib.h> - Тоже БАЗА (буквально расшифровывается как «standard library»)
+там есть функции преобразований (аналоги sprintf), кто смелый может попробовать, 
+он запретил sprintf в задании 8, но об этом ничего не говорил
+#include <Math.h> - Математическая БАЗА
+#include <string.h> - Функции работы со строками strlen(), strcmp(), strtok() и т.д
+
+
+Только на Windows
+
+#include <Windows.h> - все функции, типы и т.д от Windows API (если вы что-то ищете вероятно это здесь)
+
+Только на Linux
+
+#include <dlfcn.h> - Для работы с динамическими .so библиотеками
+#include <unistd.h> - Основная библиотека для работы с линукс fork, close, read, write, pipe, _exit
+#include <fcntl.h> - Здесь лежит open() (Почему? я и сам не знаю)
+#include <sys/wait.h> - Для функции ожидания завершения процесса wait()
+#include <sys/stat.h> - Для создания очередей FIFO (Именованных каналов в Linux)
+#include <pthread.h> - Для работы с потоками в Линукс
